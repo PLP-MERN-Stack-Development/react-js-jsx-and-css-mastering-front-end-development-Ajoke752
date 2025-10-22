@@ -1,18 +1,109 @@
-# React + Vite
+# 🧩 PLP Task Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **React + Vite** powered **Task Management Application** built with **Tailwind CSS**, featuring dark/light theme support, reusable components, and persistent local storage.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- ✅ Add, complete, and delete tasks easily
+- 🌓 Theme toggle (Light/Dark mode) using Context API
+- 💾 Tasks are saved automatically in `localStorage`
+- 🧱 Reusable UI components (Button, Card, Navbar, Footer)
+- ⚡ Built with **Vite** for fast development
+- 🎨 Styled with **Tailwind CSS** for responsive design
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+| Category | Tools |
+|-----------|--------|
+| Frontend | React + Vite |
+| Styling | Tailwind CSS |
+| State Management | React Hooks (`useState`, `useEffect`, `useContext`) |
+| Persistence | Local Storage |
+| Code Quality | ESLint + PropTypes |
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📁 Folder Structure
+
+```
+src/
+ ┣ components/
+ ┃ ┣ Button.jsx
+ ┃ ┣ Card.jsx
+ ┃ ┣ Navbar.jsx
+ ┃ ┣ Footer.jsx
+ ┃ ┗ TaskManager.jsx
+ ┣ context/
+ ┃ ┗ ThemeContext.jsx
+ ┣ App.jsx
+ ┣ main.jsx
+ ┗ index.css
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/PLP-MERN-Stack-Development/react-js-jsx-and-css-mastering-front-end-development-Ajoke752.git
+   cd plp-task-manager
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser and visit:
+   ```
+   http://localhost:5173/
+   ```
+
+---
+
+## 🌗 Theme Switching
+
+The app uses a **Theme Context** to manage light/dark mode.  
+The selected theme is automatically stored in `localStorage` and applied globally.
+
+---
+
+## 📦 Reusable Components
+
+| Component | Description |
+|------------|--------------|
+| **Button** | Multiple variants (primary, secondary, danger) |
+| **Card** | Displays boxed content layouts |
+| **Navbar** | Top navigation with theme toggle |
+| **Footer** | Contains links & copyright info |
+| **TaskManager** | Core task CRUD and filters |
+
+---
+
+## 🧠 Learning Objectives
+
+- Understand component-based architecture in React  
+- Practice state management with hooks  
+- Implement context for global state  
+- Style UI with Tailwind CSS  
+- Manage persistent data with localStorage
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**.  
+Feel free to modify and distribute it.
+
+---
+
